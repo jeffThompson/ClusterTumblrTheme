@@ -1,3 +1,5 @@
+![screenshot](https://raw.github.com/jeffThompson/ClusterTumblrTheme/master/Screenshot.png)
+
 Cluster Tumblr Theme
 ==================
 
