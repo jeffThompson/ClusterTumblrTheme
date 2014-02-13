@@ -1,14 +1,13 @@
-![screenshot](https://raw.github.com/jeffThompson/ClusterTumblrTheme/master/Screenshot.png)
+![screenshot](https://raw.github.com/jeffThompson/ClusterTumblrTheme/master/FullResScreenshots/Screenshot3.png)
 
 Cluster Tumblr Theme
 ==================
 
 A decidedly effed-up Tumblr theme, first designed for a residency with the Internet Archive.
 	
-Randomly places && rotates (nearly) all page elements. Like && reblog buttons are not placed with their posts allowing for chance-based social interaction. Interface is click-and-drag for remixing the layout ( easier access to hidden items).
+Randomly places && rotates (nearly) all page elements. Like && reblog buttons are not placed with their posts allowing for chance-based social interaction. Interface is click-and-drag for remixing the layout (easier access to hidden items).
 	
 NOTES && CAVEATS  
-+ It seems that video sizing doesn't work quite right...
 + Photosets will work, but will be a single massive stack - better to post individually
 	
 CUSTOM CSS && OPTIONS  
@@ -26,10 +25,8 @@ GOOGLE ANALYTICS
 + doesn't seem to be working with the custom option - follow one of the many online instructions for adding it manually
 
 REQUIRES  
-+ [Font Awesome for reblog icon](http://fortawesome.github.io/Font-Awesome)
 + [JQuery && JQUery UI](http://www.jquery.com)
 
 THANK YOU  
 + [Custom like button via:](http://like-button.tumblr.com)
-+ [Font Awesome for reblog icon](http://fortawesome.github.io/Font-Awesome)
 + [Creating Tumblr pages (for some reason not in the main Tumblr docs)](http://tumblring.net/tumblr-pages)
