@@ -29,7 +29,7 @@
 	THANK YOU
 	+ Custom like button via:
 			http://like-button.tumblr.com
-	+ Font Awesome for reblog icon
+	+ Font Awesome for reblog icon (well, couldn't get it to work, but maybe you can?)
 			http://fortawesome.github.io/Font-Awesome
 	+ Creating Tumblr pages (for some reason not in the main Tumblr docs)
 			http://tumblring.net/tumblr-pages
@@ -45,9 +45,9 @@
 		<link rel="alternate" type="application/rss+xml" href="{RSS}">
 
 		<!-- REQUIRED IMPORTS: FONT AWESOME && JQUERY -->
-		<link href="//netdna.bootstrapcdn.com/font-awesome/4.0.1/css/font-awesome.css" rel="stylesheet">
-		<script src="http://www.jeffreythompson.org/javascript/jquery.js"></script>
-		<script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+		<!-- <link href="http://static.tumblr.com/u6ws3wi/PeQn0wx7k/font-awesome.css" rel="stylesheet"> -->
+		<script src="http://static.tumblr.com/u6ws3wi/z8fn0wx9c/jquery-1.11.0.min.js"></script>
+		<script src="http://static.tumblr.com/u6ws3wi/wsWn0wxck/jquery-ui-1.10.4.custom.min.js"></script>
 		
 		<!-- CUSTOM OPTIONS -->
 		<meta name="if:Enable Keyboard Special Actions" content="0" />
@@ -144,11 +144,6 @@
 			.permalinkImg {
 				opacity: 1.0 !important;			/* override link opacity */
 				background-color: none !important;
-			}
-			
-			/* external links to Internet Archive site; style as needed */
-			.linkToIA {
-				
 			}
 		
 			/* header, title, description */
@@ -807,11 +802,11 @@
 				</article>	   <!-- end individual post -->
 		
 					<!-- LIKE && REBLOG -->
-					<!-- <div class="my-like" data-reblog="{ReblogURL}" data-id="{PostID}">&hearts;</div> -->
-					<div class="my-like" data-reblog="{ReblogURL}" data-id="{PostID}"><i class="fa fa-heart"></i></div>
+					<div class="my-like" data-reblog="{ReblogURL}" data-id="{PostID}">&hearts;</div>
+					<!-- <div class="my-like" data-reblog="{ReblogURL}" data-id="{PostID}"><i class="fa fa-heart"></i></div> -->
 
-					<!-- <a href="{ReblogURL}" class="reblog">&#10227;</a> -->
-					<a href="{ReblogURL}" class="reblog"><i class="fa fa-repeat"></i></a>
+					<a href="{ReblogURL}" class="reblog">&#10227;</a>
+					<!-- <a href="{ReblogURL}" class="reblog"><i class="fa fa-repeat"></i></a> -->
 				{/block:Posts} <!-- end posts -->
 	
 				<!-- FOOTER -->		
