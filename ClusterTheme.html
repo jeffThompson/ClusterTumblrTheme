@@ -271,7 +271,7 @@
 			
 			/* search */
 			form {
-				width: 300px;			/* helps with rotation issues for the search bar*/
+				width: 300px;		/* helps with rotation issues for the search bar*/
 			}
 			#search {
 				padding: 10px;		/* gives us some room to click-and-drag */
@@ -321,20 +321,20 @@
 			// GLOBAL VARIABLES		
 			// items to randomly place && rotate
 			// also possible but not used: #header or #blogTitle/#blogDescription, .pageLink
-			var whatToRotate = [ '#search', 'article', 'span.current-page', 'div#tagResults', 'div#searchResults', '.next', '.prev', '.my-like', '.my-liked', '.reblog', 'img.photoset' ];
+			var whatToRotate = [ '#search', 'article', 'span.current-page', 'div#tagResults', 'div#searchResults', '.next', '.prev', '.my-like', '.my-liked', '.reblog', 'img.photoset', '.pageLink' ];
 			{block:IfRandomizeTumblrControls}
 				whatToRotate.push('iframe#tumblr_controls');
 			{/block:IfRandomizeTumblrControls}
 	
 			// items that are draggable
-			var drag = [ '#header', 'article', '#search', '.my-like', '.my-liked', '.reblog', '.pageLink', '.prev', '.next', '#byline', 'img.photoset' ];
+			var drag = [ '#header', 'article', '#search', '.my-like', '.my-liked', '.reblog', '.pageLink', '.prev', '.next', '#byline', 'img.photoset', '.pageLink' ];
 			
 			// global position && dimension variables
 			var width = $(window).width();
 			var height = (Math.random() * 3000) + 1000;		// set window to 1k - 4k pixels high	
-			var x, y, rot, recoupLeft, recoupTop;					// placement variables
-			var numPages = 0;															// # of pages, for placement vertically
-			var useShortcutKeys = false;									// allow shortcut keys for fanciness
+			var x, y, rot, recoupLeft, recoupTop;			// placement variables
+			var numPages = 0;								// # of pages, for placement vertically
+			var useShortcutKeys = false;					// allow shortcut keys for fanciness
 			
 			// GLOBAL FUNCTIONS
 			// set item to random placement && rotation
@@ -363,7 +363,7 @@
 						'left': x + 'px',
 						'transform': 'rotate(' + rot + 'deg)',
 						'-ms-transform': 'rotate(' + rot + 'deg)', 			// for Internet Explorer 9
-						'-webkit-transform': 'rotate(' + rot + 'deg)' 	// for Safari/Chrome
+						'-webkit-transform': 'rotate(' + rot + 'deg)' 		// for Safari/Chrome
 					});
 				});
 			}
@@ -399,7 +399,7 @@
 					$(this).css ({
 						'position': 'static',	
 						'transform': 'rotate(0deg)',
-						'-ms-transform': 'rotate(0deg)', 			// for Internet Explorer 9
+						'-ms-transform': 'rotate(0deg)', 		// for Internet Explorer 9
 						'-webkit-transform': 'rotate(0deg)' 	// for Safari/Chrome
 					});
 				});
@@ -580,8 +580,8 @@
 				// UN-ROTATE POST
 				$('.unrotate').click( function() {
 					$(this).parent().css ({
-						'transform': 'rotate(0deg)',					// set rotation to 0
-						'-ms-transform': 'rotate(0deg)', 			// for Internet Explorer 9
+						'transform': 'rotate(0deg)',			// set rotation to 0
+						'-ms-transform': 'rotate(0deg)', 		// for Internet Explorer 9
 						'-webkit-transform': 'rotate(0deg)' 	// for Safari/Chrome
 					});
 					// remove link
@@ -663,13 +663,13 @@
 			
 				<!-- LINKS TO PAGES (if they have been created) -->
 				{block:HasPages}
-					<!-- <div id="pageLinks">
+					<div id="pageLinks">
 						{block:Pages}
 						<ul>
 							<li class="pageLink"><a href="{URL}">{Label}</a></li>
 						</ul>
 						{/block:Pages}
-					</div> -->
+					</div>
 				{/block:HasPages}
 
 				<!-- REGULAR POSTS (all kinds) -->
